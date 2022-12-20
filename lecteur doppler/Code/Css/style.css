@@ -184,9 +184,45 @@ body {
     background: linear-gradient(90deg, rgba(187, 135, 255, 1) 0%, rgba(187, 135, 255, 0.2721289199273459) 100%);
 }
 
-#checkbox {
+.playlist {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10rem;
+    left: 0px;
+    width: 350px;
+    height: 600px;
+    background-color: #2F195F;
+    opacity: 70%;
+    border-radius: 20px;
 }
+
+.card_playlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 220px;
+    height: 100px;
+    border-radius: 15px;
+    background: rgb(158, 56, 193);
+    background: linear-gradient(135deg, rgba(158, 56, 193, 0.6) 0%, rgba(187, 135, 255, 0.3) 100%);
+    margin: 10px 50px 10px 50px;
+}
+
+.cover_playlist {
+    border-radius: 10px;
+    height: 75px;
+}
+
+.text_card_playlist {
+    font-family: "Roboto";
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+
 
 /* ------------------BURGER------------------- */
 
@@ -262,15 +298,15 @@ body {
 .container_main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .titre {
     font-family: "Roboto";
-    font-size: 5rem;
+    font-size: 4rem;
     color: #966ECD;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .container_card {
@@ -279,7 +315,7 @@ body {
 }
 
 .cover {
-    height: 150px;
+    height: 125px;
     border-radius: 10px;
 }
 
@@ -295,11 +331,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 45px;
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 220px;
     border-radius: 15px;
     background: rgb(158, 56, 193);
     background: linear-gradient(135deg, rgba(158, 56, 193, 0.6) 0%, rgba(187, 135, 255, 0.3) 100%);
+    margin: 0 50px 0 50px;
 }
 
 .card_deux {
@@ -307,11 +344,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 45px;
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 220px;
     border-radius: 15px;
     background: rgb(158, 56, 193);
     background: linear-gradient(135deg, rgba(158, 56, 193, 0.6) 0%, rgba(187, 135, 255, 0.3) 100%);
+    margin: 0 50px 0 50px;
 }
 
 .card_trois {
@@ -319,11 +357,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 45px;
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 220px;
     border-radius: 15px;
     background: rgb(158, 56, 193);
     background: linear-gradient(135deg, rgba(158, 56, 193, 0.6) 0%, rgba(187, 135, 255, 0.3) 100%);
+    margin: 0 50px 0 50px;
 }
 
 .card_quatre {
@@ -331,13 +370,111 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 45px;
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 220px;
     border-radius: 15px;
     background: rgb(158, 56, 193);
     background: linear-gradient(135deg, rgba(158, 56, 193, 0.6) 0%, rgba(187, 135, 255, 0.3) 100%);
+    margin: 0 50px 0 50px;
+}
+
+/* ----------CARD---------- */
+
+/* ----------CARD TITRE---------- */
+.card_titre {
+    width: 274px;
+    height: 60px;
+    background: rgb(158, 56, 193);
+    background: linear-gradient(0deg, rgba(158, 56, 193, 0) 0%, rgba(187, 135, 255, 1) 100%);
+    margin: 10px 50px 10px 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-position: top;
+}
+
+.cover2 {
+    height: 45px;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.cover3 {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.texte_card_titre {
+    font-family: "roboto";
+    font-size: 1rem;
+    color: #ddd9e3;
+}
+
+/* ----------CARD TITRE---------- */
+
+
+/* ----------FOOTER---------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: -1;
+    background-position: bottom;
+    height: 250px;
+    background: rgb(187, 135, 255);
+    background: linear-gradient(0deg, rgba(187, 135, 255, 1) 30%, rgba(47, 25, 95, 1) 70%, rgba(22, 22, 22, 1) 100%);
+    padding: 0 50px 0 50px;
+}
+
+.cover_footer {
+    height: 100px;
+    border-radius: 5px;
+}
+
+.playeur_footer {
+    height: 30px;
+}
+
+.repeat {
+    height: 30px;
+
+}
+
+.playeur_footer_revers {
+    rotate: 180deg;
+    height: 30px;
 }
 
 
+input[name="time"] {
+    accent-color: #bcbcbc;
+    width: 400px;
+}
 
-/* ----------CARD---------- */
+input[name="vol"] {
+    accent-color: #bcbcbc;
+    width: 100px;
+
+}
+
+.titre_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_footer {
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    color: #bcbcbc;
+}
