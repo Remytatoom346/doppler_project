@@ -19,6 +19,7 @@
                 <div class="bar"></div>
             </div>
             <div class="playlist">
+                <div class="btn_close">x</div>
                 <div class="card_playlist">
                     <img src="../image/album/Ciela-Disoscures.jpg" alt="Albums cover" class="cover_playlist">
                     <p class="text_card_playlist">Playlist 1</p>
@@ -87,13 +88,13 @@
 
                     <div class="card_titre">
                         <img src="../image/single/ateyaba-rockWithYou.jpg" alt="" class="cover2">
-                        <p class="texte_card_titre">Rock With You - Joke</p>
+                        <p class="texte_card_titre"> NEO - Ateyaba</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
                     <div class="card_titre">
                         <img src="../image/single/ateyaba-vision.jpg" alt="" class="cover2">
-                        <p class="texte_card_titre">Vision - Ateyaba</p>
+                        <p class="texte_card_titre">NEIT - Ateyaba</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
@@ -108,7 +109,7 @@
 
                     <div class="card_titre">
                         <img src="../image/album/lithopedion-damso.jpg" alt="" class="cover2">
-                        <p class="texte_card_titre">SMOG - Damso</p>
+                        <p class="texte_card_titre">AUX PARADIS - Damso</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
@@ -133,24 +134,29 @@
             <div class="container_footer">
                 <img src="../image/album/140bpm.jpg" alt="" class="cover_footer">
                 <div class="titre_footer"> 
-                    <p class="text_footer">Titre - Artiste - Album</p>
+                    <p class="titre_text_footer">Titre - Artiste - Album</p>
                     <p class="text_footer"> -  - </p>
-                    <p class="text_footer">00 : 00</p>
+                    <p class="time_text_footer">00 : 00</p>
                 </div>
                 <img src="../SVG/play ark.svg" alt="" class="playeur_footer">
+                <div class="btn_pause">
                 <div class="pause"></div>
                 <div class="pause"></div>
-                <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer">
-                <input type="range" value="600" step="1" name="time">
+                </div>
+                <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_2">
+                <input type="range" value="0" min="600" step="1" name="time">
 
                 <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_revers">
                 <img src="../SVG/boucle.svg" alt="" class="repeat">
                 <img src="../SVG/vol.svg" alt="" class="playeur_footer">
-                <input type="range" value="10" step="1" name="vol" >
+                <input type="range" value="0" step="1" name="vol" >
 
             </div>
             
     </footer>
+
+    <audio src="" class="audio"></audio>
+
     
 </body>
 <script src="/Js/main.js"></script>

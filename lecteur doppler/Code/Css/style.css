@@ -222,6 +222,22 @@ body {
     font-size: 1.5rem;
 }
 
+.btn_close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    color: #ffff;
+    font-size: 1rem;
+    background-color: #966ECD;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
 
 
 /* ------------------BURGER------------------- */
@@ -444,9 +460,25 @@ footer {
     height: 30px;
 }
 
+.playeur_footer_2 {
+    height: 30px;
+}
+
 .repeat {
     height: 30px;
 
+}
+
+.pause {
+    height: 25px;
+    width: 8px;
+    background-color: #bcbcbc;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.btn_pause {
+    display: flex;
 }
 
 .playeur_footer_revers {
@@ -473,7 +505,19 @@ input[name="vol"] {
     align-items: center;
 }
 
+.titre_text_footer {
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    color: #bcbcbc;
+}
+
 .text_footer {
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    color: #bcbcbc;
+}
+
+.time_text_footer {
     font-family: 'roboto';
     font-size: 1.2rem;
     color: #bcbcbc;
