@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doppler player</title>
-    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="../Css/style.css">
 </head>
 <body>
     <header>
@@ -132,22 +132,26 @@
 
     <footer>
             <div class="container_footer">
-                <img src="../image/album/140bpm.jpg" alt="" class="cover_footer">
+                <img src="" alt="" class="cover_footer">
                 <div class="titre_footer"> 
                     <p class="titre_text_footer">Titre - Artiste - Album</p>
                     <p class="text_footer"> -  - </p>
                     <p class="time_text_footer">00 : 00</p>
                 </div>
+
                 <img src="../SVG/play ark.svg" alt="" class="playeur_footer">
+                
                 <div class="btn_pause">
-                <div class="pause"></div>
-                <div class="pause"></div>
+                    <div class="pause"></div>
+                    <div class="pause"></div>
                 </div>
-                <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_2">
+
+                    <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_2">
+
                 <input type="range" value="0" min="600" step="1" name="time">
 
                 <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_revers">
-                <img src="../SVG/boucle.svg" alt="" class="repeat">
+                <div class="stop"></div>
                 <img src="../SVG/vol.svg" alt="" class="playeur_footer">
                 <input type="range" value="0" step="1" name="vol" >
 
@@ -157,7 +161,6 @@
 
     <audio src="" class="audio"></audio>
 
-    
 </body>
-<script src="/Js/main.js"></script>
+<script src="../Js/main.js"></script>
 </html>

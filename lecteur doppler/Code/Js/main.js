@@ -12,82 +12,93 @@ btn_close.addEventListener('click', (e) => {
     div_playlist.style.display = 'none';
 });
 
-// GESTION DE L'AUDIO
+// GESTION DE L'c_audio
 
 // VARIABLE, CONST
 
 // SELECTION DES BOUTONS
 const btn_play = document.querySelector('.playeur_footer');
-const btn_stop = document.querySelector('.btn_pause');
+const btn_pause = document.querySelector('.btn_pause');
 const btn_retour =document.querySelector('.playeur_footer_2');
-const btn_repeat= document.querySelector('.repeat');
+const btn_stop= document.querySelector('.stop');
 const btn_next= document.querySelector('.playeur_footer_revers');
 const Titre_son = document.querySelector('.titre_text_footer');
 const timer_son = document.querySelector('.time_text_footer');
-const cover_titre = document.querySelector('.cover_footer');
-const audio = document.querySelector('.audio');
+const cover_footer = document.querySelector('.cover_footer');
+const c_audio = document.querySelector('.audio');
 
 // SELECTION DES MUSIQUES
 const list = [
     {
         source:"../piste/Ateyaba - NEIT.mp3",
-        nom: "ATEYABA - NEIT"
+        nom: "ATEYABA - NEIT",
+        image:"../image/single/ateyaba-vision.jpg"
     },
 
     {
         source:"../piste/Ateyaba - Neo (911).mp3",
-        nom : "Ateyaba - Neo (911)"
+        nom : "Ateyaba - Neo (911)",
+        image:"../image/single/ateyaba-rockWithYou.jpg"
     },
 
     {
         source:"../piste/Damso - Aux Paradis.mp3",
-        nom : "Damso - Aux Paradis"
+        nom : "Damso - Aux Paradis",
+        image:"../image/album/lithopedion-damso.jpg"
     },
 
     {
         source:"../piste/Kekra - Iverson (Clip Officiel).mp3",
-        nom : "Kekra - Iverson (Clip Officiel)"
+        nom : "Kekra - Iverson (Clip Officiel)",
+        image:"../image/single/iverson-kekra.jpg"
     },
 
     {
         source:"../piste/LA FÈVE - ERRR (prod. KOSEI).mp3",
-        nom : "LA FÈVE - ERRR (prod. KOSEI)"
+        nom : "LA FÈVE - ERRR (prod. KOSEI)",
+        image:"../image/album/ERR-LaFeve.jpg"
     },
 
     {
         source:"../piste/LAYLOW - MEGATRON.mp3",
-        nom : "LAYLOW - MEGATRON"
+        nom : "LAYLOW - MEGATRON",
+        image:"../image/album/laylow-trinity.jpg"
     },
 ]
 
 // 
 
-let musique_play = false;
-// lancer la musique
+
 function play_musique() {
-    musique_play = true;
-    audio.play();
-    btn_play.classList.add('active');
+    c_audio.play();
 }
+
 // stop la musique
 function pause_musique() {
-    musique_play = false;
-    audio.play();
-    btn_stop.classList.remove('active');
-    console.log(pause_musique());
+    c_audio.pause();
 }
-
-
-btn_play.addEventListener('click',()=>musique_play ? pause_musique(): play_musique());
 
 function demar_musique(list) {
     Titre_son.textContent= list.nom;
-    audio.src = list.source;
+    c_audio.src = list.source;
+    cover_footer.src = list.image;
+    c_audio.play()
 }
 
-let i = 1
+btn_play.addEventListener('click',(e)=>
+{
+    play_musique()
+});
 
-demar_musique(list[i]);
+btn_pause.addEventListener('click',(e)=>
+{
+    c_audio.pause();
+});
+
+
+let i = 1;
+
+demar_musique(list[0]);
 
 function retour_musique(){
   i--;
@@ -96,11 +107,20 @@ function retour_musique(){
   } 
   demar_musique(list[i]);
   play_musique();
-  console.log(retour_musique());
 }
 
-btn_retour.addEventListener('click',retour_musique());
+btn_retour.addEventListener('click',retour_musique);
 
-console.log(audio.src());
+function next_musique(){
+  i++;
+  if (i>list.length-1) {
+    i= 0;
+  } 
+  demar_musique(list[i]);
+  play_musique();
+}
+
+btn_next.addEventListener('click',next_musique);
+
 
 

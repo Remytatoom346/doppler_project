@@ -443,7 +443,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: -1;
+    /* z-index: -1; */
     background-position: bottom;
     height: 250px;
     background: rgb(187, 135, 255);
@@ -453,6 +453,7 @@ footer {
 
 .cover_footer {
     height: 100px;
+    width: 100px;
     border-radius: 5px;
 }
 
@@ -464,8 +465,11 @@ footer {
     height: 30px;
 }
 
-.repeat {
+.stop {
     height: 30px;
+    width: 30px;
+    background-color: #bcbcbc;
+    border-radius: 4px;
 
 }
 
