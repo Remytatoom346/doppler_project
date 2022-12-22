@@ -20,17 +20,17 @@
             </div>
             <div class="playlist">
                 <div class="btn_close">x</div>
-                <div class="card_playlist">
+                <div class="card_playlist" id="playlist1">
                     <img src="../image/album/Ciela-Disoscures.jpg" alt="Albums cover" class="cover_playlist">
                     <p class="text_card_playlist">Playlist 1</p>
 
                 </div>
-                <div class="card_playlist">
+                <div class="card_playlist" id="playlist2">
                     <img src="../image/album/Ciela-Disoscures.jpg" alt="Albums cover" class="cover_playlist">
                     <p class="text_card_playlist">Playlist 2</p>
 
                 </div>
-                <div class="card_playlist">
+                <div class="card_playlist" id="playlist3">
                       <img src="../image/album/Ciela-Disoscures.jpg" alt="Albums cover" class="cover_playlist">
                         <p class="text_card_playlist">Playlist 3</p>
                 </div>
@@ -86,19 +86,19 @@
                 <h1 class="titre">Vos Titres Favoris</h1>
                 <div class="container_card">
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre1">
                         <img src="../image/single/ateyaba-rockWithYou.jpg" alt="" class="cover2">
                         <p class="texte_card_titre"> NEO - Ateyaba</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre2">
                         <img src="../image/single/ateyaba-vision.jpg" alt="" class="cover2">
                         <p class="texte_card_titre">NEIT - Ateyaba</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre3">
                         <img src="../image/album/Ciela-Disoscures.jpg" alt="" class="cover2">
                         <p class="texte_card_titre">DOR2MI - Disoscures</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
@@ -107,19 +107,19 @@
 
                 <div class="container_card">
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre4">
                         <img src="../image/album/lithopedion-damso.jpg" alt="" class="cover2">
                         <p class="texte_card_titre">AUX PARADIS - Damso</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre5">
                         <img src="../image/album/laylow-trinity.jpg" alt="" class="cover2">
                         <p class="texte_card_titre">MEGATRON - Laylow</p>
                         <img src="../SVG/play ark.svg" alt="" class="cover3">
                     </div>
 
-                    <div class="card_titre">
+                    <div class="card_titre" id="titre6">
                        <img src="../image/single/iverson-kekra.jpg" alt="" class="cover2">
                        <p class="texte_card_titre">Iverson - Kekra</p>
                        <img src="../SVG/play ark.svg" alt="" class="cover3">
@@ -147,19 +147,20 @@
 
                     <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_2">
                     <p class="time_text_footer">0 : 00</p>
-                <input type="range" value="0" min="600" step="1" name="time">
+                <input type="range" value="0" min="0" max="" step="1" name="time" id="time_bar">
                 <p class="total_time_text_footer">00 : 00</p>
 
                 <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_revers">
                 <div class="stop"></div>
                 <img src="../SVG/vol.svg" alt="" class="playeur_footer">
-                <input type="range" value="0" step="1" name="vol" id="vol" min="0" max="100" >
+                <input type="range" value="" step="1" name="vol" id="vol" min="0" max="100" >
 
             </div>
             
     </footer>
 
     <audio src="" class="audio"></audio>
+
 
 </body>
 <script src="../Js/main.js"></script>
