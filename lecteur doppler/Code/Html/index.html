@@ -7,7 +7,7 @@
     <title>Doppler player</title>
     <link rel="stylesheet" href="../Css/style.css">
 </head>
-<body>
+<body id="body_color">
     <header>
 
         <section class="container_head">
@@ -133,10 +133,9 @@
     <footer>
             <div class="container_footer">
                 <img src="" alt="" class="cover_footer">
+                <div class="cover_none"></div>
                 <div class="titre_footer"> 
                     <p class="titre_text_footer">Titre - Artiste - Album</p>
-                    <p class="text_footer"> -  - </p>
-                    <p class="time_text_footer">00 : 00</p>
                 </div>
 
                 <img src="../SVG/play ark.svg" alt="" class="playeur_footer">
@@ -147,13 +146,14 @@
                 </div>
 
                     <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_2">
-
+                    <p class="time_text_footer">0 : 00</p>
                 <input type="range" value="0" min="600" step="1" name="time">
+                <p class="total_time_text_footer">00 : 00</p>
 
                 <img src="../SVG/next_back_icon.svg" alt="" class="playeur_footer_revers">
                 <div class="stop"></div>
                 <img src="../SVG/vol.svg" alt="" class="playeur_footer">
-                <input type="range" value="0" step="1" name="vol" >
+                <input type="range" value="0" step="1" name="vol" id="vol" min="0" max="100" >
 
             </div>
             
